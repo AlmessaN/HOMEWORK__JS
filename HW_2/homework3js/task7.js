@@ -1,13 +1,13 @@
 let month = parseInt(prompt("Введіть номер місяця:"));
 
 if (month < 1 || month > 12) {
-  console.log("Некоректний номер місяця");
+  document.write("<h1>Некоректний номер місяця</h1>");
 } else if (month >= 3 && month <= 5) {
-  console.log("Весна");
+  document.write("<h1>Весна</h1>");
 } else if (month >= 6 && month <= 8) {
-  console.log("Літо");
+  document.write("<h1>Літо</h1>");
 } else if (month >= 9 && month <= 11) {
-  console.log("Осінь");
+  document.write("<h1>Осінь</h1>");
 } else {
-  console.log("Зима");
+  document.write("<h1>Зима</h1>");
 }

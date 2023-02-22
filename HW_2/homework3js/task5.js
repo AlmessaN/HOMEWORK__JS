@@ -2,14 +2,14 @@ let category = prompt("Введіть категорію водійських п
 
 switch (category) {
   case "A":
-    console.log("Мотоцикл");
+    document.write("<h1>Мотоцикл</h1>");
     break;
   case "B":
-    console.log("Легковий автомобіль");
+    document.write("<h1>Легковий автомобіль</h1>");
     break;
   case "C":
-    console.log("Вантажний автомобіль");
+    document.write("<h1>Вантажний автомобіль</h1>");
     break;
   default:
-    console.log("Невірно введена категорія водійських прав.");
+    document.write("<h1>Невірно введена категорія водійських прав.</h1>");
 }

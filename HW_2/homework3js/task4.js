@@ -1,13 +1,13 @@
 let age = prompt("Введіть свій вік:");
 
 if (age < 6) {
-  console.log("Ви дитина у садочку.");
+  document.write("<h1>Ви дитина у садочку.</h1>");
 } else if (age < 18) {
-  console.log("Ви школяр.");
+  document.write("<h1>Ви школяр.</h1>");
 } else if (age < 24) {
-  console.log("Ви студент.");
+  document.write("<h1>Ви студент.</h1>");
 } else if (age < 60) {
-  console.log("Ви працівник.");
+  document.write("<h1>Ви працівник.</h1>");
 } else {
-  console.log("Ви пенсіонер.");
+  document.write("<h1>Ви пенсіонер.</h1>");
 }

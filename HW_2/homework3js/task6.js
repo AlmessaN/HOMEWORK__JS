@@ -2,26 +2,26 @@ let day = prompt("Введіть номер дня тижня (1-7):");
 
 switch (day) {
   case "1":
-    console.log("Понеділок");
+    document.write("<h1>Понеділок</h1>");
     break;
   case "2":
-    console.log("Вівторок");
+    document.write("<h1>Вівторок</h1>");
     break;
   case "3":
-    console.log("Середа");
+    document.write("<h1>Середа</h1>");
     break;
   case "4":
-    console.log("Четвер");
+    document.write("<h1>Четвер</h1>");
     break;
   case "5":
-    console.log("П'ятниця");
+    document.write("<h1>П'ятниця</h1>");
     break;
   case "6":
-    console.log("Субота");
+    document.write("<h1>Субота</h1>");
     break;
   case "7":
-    console.log("Неділя");
+    document.write("<h1>Неділя</h1>");
     break;
   default:
-    console.log("Невірно введений номер дня тижня.");
+    document.write("<h1>Невірно введений номер дня тижня.</h1>");
 }
