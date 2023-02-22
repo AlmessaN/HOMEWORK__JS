@@ -1,4 +1,4 @@
-let age = prompt("Введіть свій вік:");
+let age = parseInt(prompt("Введіть свій вік:"));
 
 if (age < 6) {
   document.write("<h1>Ви дитина у садочку.</h1>");
