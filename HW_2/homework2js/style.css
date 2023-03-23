@@ -37,3 +37,20 @@ h1 {
     justify-content: center;
     margin-bottom: 10px;
 }
+div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+table {
+    padding: 7px;
+    border-width: thick;
+    border-style: groove;
+    border-color: gold;
+}
+td {
+    border-width: thick;
+    border-style: outset;
+    border-color: gold;
+}
