@@ -1,29 +1,34 @@
-// Створити 3 таблиці
-for (let t = 0; t < 3; t++) {
-  const table = document.createElement('table');
-
-  // Створити лічильник для номерації комірок
-  let counter = 1;
-
-  // Створити 3 рядки
+// Функція, що створює таблицю
+function createTable(startNum) {
+  // Створюємо таблицю
+  let table = document.createElement('table');
+  
+  // Заповнюємо таблицю рядками і стовпцями
   for (let i = 0; i < 3; i++) {
-    const row = document.createElement('tr');
-
-    // Створити 3 стовпців в кожному рядку
+    // Створюємо рядок таблиці
+    let row = document.createElement('tr');
+    
     for (let j = 0; j < 3; j++) {
-      const cell = document.createElement('td');
-      const cellText = document.createTextNode(counter);
-      cell.appendChild(cellText);
+      // Створюємо комірку таблиці
+      let cell = document.createElement('td');
+      
+      // Заповнюємо комірку номером
+      let num = startNum + (i * 3) + j;
+      cell.innerText = num;
+      
+      // Додаємо комірку до рядка
       row.appendChild(cell);
-
-      // Збільшити лічильник на 1
-      counter++;
     }
-
-    // Додати рядок до таблиці
+    
+    // Додаємо рядок до таблиці
     table.appendChild(row);
   }
-
-  // Додати таблицю до сторінки
+  
+  // Додаємо таблицю на сторінку
   document.body.appendChild(table);
+}
+
+// Створюємо 3 таблиці з нумерацією від 1 до 27
+for (let i = 1; i <= 27; i += 9) {
+  createTable(i);
 }
